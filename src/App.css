@@ -1,38 +1,112 @@
-.App {
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+
+.loader{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+}
+
+.app {  
+  background: url('../src/assets/weather.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;  
+  border: 1px solid black;
+  width: 40%;
+  height: 80%;
+  font-size: 2rem;
+  color:aliceblue;
+  position: relative;  
+}
+
+.container h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;  
+}
+
+button{
+  width: 30%;
+  height: 2.5rem;
+  border-radius: 1rem;
+  font-size: large;   
+  background-color: rgba(155, 255, 255, 0.7);
+  border-color: beige;
+  color:rebeccapurple
+}
+
+.subTop{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;  
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;  
+}
+
+.temp{
+  font-size: 2.5rem;  
+}
+
+.location{
+  margin: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon{
+  position: relative;    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon p{
+  position: absolute;
+  right: 5rem;
+  top: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description{
+  transform: rotate(270deg);
+  position: absolute;
+  bottom: 10rem;
+  right: -1rem;
+  font-size: 1.2rem;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.wind, .humidity, .pressure{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
