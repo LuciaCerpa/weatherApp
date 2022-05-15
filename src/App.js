@@ -62,7 +62,7 @@ console.log(iconUrl)
         {grades ? <h2>{data.main?.temp} °C </h2>:<h2>{(data.main?.temp*1.8+32).toFixed(1)} °F</h2>}
         </div>
         <div className='icon'>
-          <p><img src={iconUrl} alt="i"/></p>
+          <p>{data.weather?.[0].main}<img src={iconUrl} alt="i"/></p>
         </div>
           <div className="description">
             

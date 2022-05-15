@@ -31,8 +31,8 @@
   align-items: center;
   padding: 1rem;  
   border: 1px solid black;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   font-size: 2rem;
   color:aliceblue;
   position: relative;  
@@ -85,7 +85,7 @@ button{
   right: 1rem;
   top: -2rem;
   height: 10rem;
-  width: 10rem;  
+  width: 10rem;    
 }
 
 .description{
