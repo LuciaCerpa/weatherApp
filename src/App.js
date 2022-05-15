@@ -44,6 +44,7 @@ const url = "http://openweathermap.org/img/wn/";
 const iconUrl = url + data.weather?.[0].icon + "@2x.png";
 
 console.log(data.weather?.[0].icon)
+console.log(iconUrl)
 
   return (
     <div className='loader'>
@@ -61,7 +62,7 @@ console.log(data.weather?.[0].icon)
         {grades ? <h2>{data.main?.temp} °C </h2>:<h2>{(data.main?.temp*1.8+32).toFixed(1)} °F</h2>}
         </div>
         <div className='icon'>
-          <p><img url={iconUrl} alt="i"/></p>
+          <p><img src={iconUrl} alt="i"/></p>
         </div>
           <div className="description">
             

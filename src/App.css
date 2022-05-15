@@ -31,7 +31,7 @@
   align-items: center;
   padding: 1rem;  
   border: 1px solid black;
-  width: 40%;
+  width: 80%;
   height: 80%;
   font-size: 2rem;
   color:aliceblue;
@@ -80,10 +80,12 @@ button{
   position: relative;    
 }
 
-.icon p{
+.icon img{
   position: absolute;
-  right: 5rem;
-  top: 1.5rem;
+  right: 1rem;
+  top: -2rem;
+  height: 10rem;
+  width: 10rem;  
 }
 
 .description{
@@ -108,5 +110,9 @@ button{
   align-items: center;
   font-size: 1.2rem;
 }
+
+
+  
+
 
 
